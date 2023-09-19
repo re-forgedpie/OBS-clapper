@@ -51,9 +51,7 @@ Invoke these via `http://localhost:8000/{end_point}`:
    
 2. "Base Directory for recordings" denotes the directory for your renamed files. A structured folder hierarchy is adopted for clarity: Base dir/Categorization code/Date recorded_Scene_Shot_Take.
 
-3. If you change any setting, remember to reload the script by selecting it and hitting the reload button.
-
-4. Adjust the Scene, Shot, and Take numbers manually if needed. Please note that this requires a script reload.
+4. Adjust the Scene, Shot, and Take numbers manually if needed. (Doesn't display current Shot/Scene number)
 
 ### Stream Deck Integration
 
@@ -65,15 +63,13 @@ Invoke these via `http://localhost:8000/{end_point}`:
 
 ## Limitations
 
-- **Code Completion**: Some sections in `FilmSettings` class aren't fully functional yet. Navigating back to a previous scene or shot doesn't revert to the last known shot or take number.
+- **Feature Completion**: Some sections in `FilmSettings` class aren't fully functional yet. Navigating back to a previous scene or shot doesn't revert to the last known shot or take number.
   
 - **HTTP Port Configuration**: The script binds to `localhost:8000`. Ensure no other service occupies this port, or consider modifying the script to use a different one.
   
 - **Stream Deck UI Update**: The current scene, shot, or take numbers aren't displayed on the Stream Deck. Rely on memory or the "script log" for now.
   
 - **Decrease Shortcut Limitation**: Shortcuts only exist for incrementing scene/shot/take. Decreasing is solely possible via the local webserver.
-
-- **Script Log Window Activation**: During the operation of OBS-Clapper, the script log window in OBS will automatically open. This might disrupt your view if you're actively using OBS during filming or streaming. (fix pending...)
 
 ## Important Reminder
 
